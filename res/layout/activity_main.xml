@@ -63,7 +63,7 @@
         android:text="@string/money" />
 
     <SeekBar
-        android:id="@+id/money_sb"
+        android:id="@+id/left_sb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -77,5 +77,22 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:text="@string/exit" />
+
+    <SeekBar
+        android:id="@+id/right_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/left_sb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lost_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/settings" />
 
 </RelativeLayout>
