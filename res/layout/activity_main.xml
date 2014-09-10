@@ -4,70 +4,13 @@
     android:layout_height="fill_parent" >
 
     <ToggleButton
-        android:id="@+id/ilu_button"
+        android:id="@+id/birds_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/money_button"
-        android:layout_alignBottom="@+id/money_button"
-        android:layout_centerHorizontal="true"
-        android:text="@string/ilu" />
-
-    <ToggleButton
-        android:id="@+id/lost_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/ilu_button"
-        android:layout_alignBottom="@+id/ilu_button"
+        android:layout_alignBaseline="@+id/boats_button"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:text="@string/lost" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ilu_button"
-        android:layout_alignLeft="@+id/ilu_button"
-        android:layout_alignRight="@+id/ilu_button"
-        android:gravity="center"
-        android:text="@string/ilu" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/lost_button"
-        android:layout_alignLeft="@+id/lost_button"
-        android:layout_alignRight="@+id/lost_button"
-        android:gravity="center"
-        android:text="@string/lost" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ilu_button"
-        android:layout_alignLeft="@+id/money_button"
-        android:layout_alignRight="@+id/money_button"
-        android:gravity="center"
-        android:text="@string/money" />
-
-    <ToggleButton
-        android:id="@+id/money_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="106dp"
-        android:text="@string/money" />
-
-    <SeekBar
-        android:id="@+id/left_sb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true" />
+        android:text="@string/birds" />
 
     <Button
         android:id="@+id/exit_button"
@@ -78,21 +21,41 @@
         android:layout_alignParentTop="true"
         android:text="@string/exit" />
 
-    <SeekBar
-        android:id="@+id/right_sb"
-        android:layout_width="match_parent"
+    <ToggleButton
+        android:id="@+id/boats_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/left_sb"
-        android:layout_marginTop="20dp" />
+        android:layout_below="@+id/ns_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/boats" />
+
+    <Button
+        android:id="@+id/ns_button"
+        style="android:buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sn_button"
+        android:layout_below="@+id/exit_button"
+        android:layout_marginTop="19dp"
+        android:text="N -> S" />
+
+    <Button
+        android:id="@+id/sn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/boats_button"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/boats_button"
+        android:text="S -> N" />
 
     <Button
         android:id="@+id/settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lost_button"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="18dp"
+        android:layout_alignRight="@+id/birds_button"
+        android:layout_marginBottom="17dp"
         android:text="@string/settings" />
 
 </RelativeLayout>
