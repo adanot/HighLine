@@ -4,15 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.austinipm.highline.MapActivity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+     android:background="@drawable/bghdpi" >
 
 
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/map" />
+    
     
            <Button
         android:id="@+id/back_button"
@@ -22,6 +19,15 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:text="@string/back" />
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="32dp"
+               android:layout_toLeftOf="@+id/back_button"
+               android:src="@drawable/map" />
 
 </RelativeLayout>
 
